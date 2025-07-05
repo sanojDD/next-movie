@@ -1,5 +1,6 @@
 import Link from "next/link";
-// import DarkModeSwitch from './DarkModeSwitch';
+
+import DarkModeSwitch from "./DarkModeSwitch";
 // import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 export default function Header() {
   return (
@@ -22,13 +23,13 @@ export default function Header() {
         </li>
       </ul>
       <div className="flex items-center gap-4">
-        {/* <DarkModeSwitch /> */}
+        <DarkModeSwitch />
         <Link href={"/"} className="flex gap-1 items-center">
           <span className="text-2xl font-bold bg-gradient-to-r from-indigo-800 via-purple-800 to-blue-900 text-white py-1 px-2 rounded-lg">
             Dahal
           </span>
 
-          <span className="text-xl hidden sm:inline">Movie</span>
+          <span className="text-xl hidden sm:inline">Movies</span>
         </Link>
       </div>
     </div>
