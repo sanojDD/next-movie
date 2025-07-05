@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "../components/Header";
 import ThemeCom from "../components/ThemeCom";
 import Navbar from "../components/Navbar";
+import SearchBox from "../components/SearchBox";
+
 import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = Geist({
@@ -28,6 +30,7 @@ export default function RootLayout({ children }) {
           <ThemeCom>
             <Header />
             <Navbar />
+            <SearchBox />
             {children}
           </ThemeCom>
         </body>
