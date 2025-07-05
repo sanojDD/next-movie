@@ -65,8 +65,10 @@ export default function AddToFav({
     <div>
       <button
         onClick={handleFavClick}
-        className={`p-2 rounded  cursor-pointer ${
-          isFav ? "bg-red-300 dark:bg-red-600" : "bg-gray-300 dark:bg-gray-600"
+        className={`p-2 px-4 cursor-pointer rounded-md font-medium transition-colors duration-300 shadow-md hover:scale-105 hover:shadow-lg ${
+          isFav
+            ? "bg-red-400 text-white dark:bg-red-600"
+            : "bg-gray-200 text-black dark:bg-gray-700 dark:text-white"
         }`}
         disabled={isLoading}
       >
