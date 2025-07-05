@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import ThemeCom from "../components/ThemeCom";
+import Navbar from "../components/Navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const geistSans = Geist({
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <body>
           <ThemeCom>
             <Header />
+            <Navbar />
             {children}
           </ThemeCom>
         </body>
